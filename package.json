@@ -1,0 +1,22 @@
+{
+  "name": "flot-en-direct",
+  "version": "1.0.0",
+  "description": "Simulation en direct de l'algorithme de Ford-Fulkerson : les étudiants sont les sommets d'un réseau et suivent la circulation du flot.",
+  "type": "module",
+  "private": true,
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "start": "node src/server.js",
+    "test": "node --test --test-concurrency=1 --test-force-exit"
+  },
+  "dependencies": {
+    "express": "^4.22.3",
+    "qrcode": "^1.5.4",
+    "socket.io": "^4.8.4"
+  },
+  "devDependencies": {
+    "socket.io-client": "^4.8.4"
+  }
+}
